@@ -1,0 +1,169 @@
+html {
+  --body-text-color: rgb(70,35,10);
+  --body-background: white;
+  --header-text-color: saddlebrown;
+  --header-background: bisque;
+  --visited-link-color: #676767;
+  height: 100%;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Color Scheme */
+
+header, footer, html {
+  color: var(--body-text-color);
+  background-color: var(--header-background);
+}
+main {
+  color: var(--body-text-color);
+  background-color: var(--body-background);
+  padding: .5rem 0;
+}
+.logo {
+  text-decoration: none;
+  font: bold 2rem "Segoe Script", cursive;
+  padding: 0 1rem;
+}
+.logo:link,
+.logo:visited {
+  color: var(--header-text-color);
+}
+
+/* Forms */
+form {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+form p.container {
+  justify-content: end;
+}
+form label {
+  flex-basis: 8rem;
+  text-align: right;
+}
+form input,
+form select,
+form textarea {
+  flex: auto;
+}
+form .button-row {
+  margin-top: 1rem;
+  text-align: center;
+}
+.cta-button {
+  color: white;
+  background-color: var(--header-text-color);
+  font-weight: bold;
+  padding: .4rem 1rem;
+  border-radius: .8rem;
+  border: none;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: .5rem;
+}
+.cell {
+  flex: 1;
+}
+.cell-main {
+  flex: 2;
+}
+.cell-fill {
+  flex: auto;
+}
+
+.v-center {
+  align-self: center;
+}
+
+/* Header */
+header.container {
+  align-items: end;
+}
+header .slogan {
+  text-align: right;
+  padding-right: 1rem;
+}
+.slogan {
+  font-style: italic;
+  margin: 0;
+}
+
+/* Navigation */
+nav menu {
+  list-style-type: none;
+  gap: .2rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+}
+nav a {
+  color: var(--header-text-color);
+  text-decoration: none;
+}
+nav li {
+  font-weight: bold;
+}
+header nav li {
+  display: inline-block;
+  text-align: center;
+  padding: .3rem .5rem;
+}
+header li.active {
+  color: var(--body-text-color);
+  background-color: var(--body-background);
+  border-bottom: .5rem solid var(--body-background);
+  border-radius: .5rem .5rem 0 0;
+}
+header .cta-button {
+  position: relative;
+  top: -.5rem;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  text-align: center;
+  padding-top: .5rem;
+}
+footer .container {
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+footer .logo {
+  max-height: 6rem;
+}
+footer menu {
+  margin-top: 0;
+}
+footer #copyright {
+  position: absolute;
+  right: .2rem;
+  bottom: .2rem;
+  text-align: right;
+  font-size: x-small;
+  font-style: italic;
+}
+
+/* Page Content */
+h1, h2 {
+  margin: 0 1rem;
+}
+main p {
+  margin-top: 0;
+  padding: 0 .5rem;
+}
+.support-picture {
+  width: 100%;
+  max-width: 1000px;
+}
+main a:link    { color: var(--header-text-color); }
+main a:visited { color: var(--visited-link-color); }
